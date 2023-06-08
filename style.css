@@ -589,6 +589,7 @@ i {
 
     .project-cards {
         flex-direction: column;
+        align-items: center;
     }
 
     .project-card {
@@ -642,7 +643,7 @@ i {
         display: block;
         text-align: center;
         box-sizing: border-box;
-        padding: 50px;
+        padding: 20px;
         color: white;
         background-color: rgb(4, 10, 34);
     }
