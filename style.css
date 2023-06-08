@@ -456,7 +456,7 @@ i {
 
   #lines {
     z-index: 201;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     margin-top: 20px;
@@ -536,9 +536,9 @@ i {
 
     .about-words {
         margin-top: 20px;
-        font-size: 16px;
+        font-size: 14px;
         color: white;
-        line-height: 1.2;
+        line-height: 1.7;
         font-weight: 300;
     }
 
@@ -588,7 +588,7 @@ i {
     }
 
     .project-card {
-        width: 350px;
+        width: 300px;
         height: 200px;
         box-sizing: border-box;
         border-radius: 8px;
@@ -602,8 +602,7 @@ i {
 
     .project-text {
         color: white;
-        font-size: 16px;
-
+        font-size: 14px;
         line-height: 25px;
     }
 
@@ -618,9 +617,9 @@ i {
 
     .partners-block img {
         text-align: center;
-        width: 250px;
-        height: 200px;
-        margin: 15px;
+        width: 225px;
+        height: 210px;
+        margin: 10px;
     }
 
     .prev {
@@ -637,8 +636,7 @@ i {
     .footer {
         height: auto;
         display: block;
-        justify-content: space-between;
-        align-items: center;
+        text-align: center;
         box-sizing: border-box;
         padding: 50px;
         color: white;
