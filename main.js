@@ -93,3 +93,13 @@ if (window.innerWidth < 800) {
             </div>
         </div>`;
 }
+
+function showMoreServ(tmpl_id) {
+    document.querySelector('body').classList.toggle('opacity');
+    document.getElementById("tmpl_serv" + tmpl_id).classList.toggle('projects-list')
+}
+
+function closeList(tmpl_id) {
+    document.querySelector('body').classList.toggle('opacity');
+    document.getElementById("tmpl_serv" + tmpl_id).classList.toggle('projects-list')
+}

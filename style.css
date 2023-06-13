@@ -230,7 +230,7 @@ html {
 .services-card {
     box-sizing: border-box;
     margin: 20px;
-    height: 300px;
+    height: 350px;
     width: 300px;
     box-sizing: border-box;
     padding: 40px 20px 40px 20px;
@@ -253,6 +253,15 @@ html {
 .services-text {
     margin-top: 40px;
     font-size: 23px;
+}
+
+.services-more-btn {
+    font-size: 24px;
+    color: rgb(4, 10, 34);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 40px;
 }
 
 .footer {
@@ -491,6 +500,49 @@ i {
     left: 0px !important;
 }
 
+.hidden {
+    display: none;
+}
+
+.projects-list {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    width: 600px;
+}
+
+.close-list {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.list-title {
+    text-align: center;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgb(4, 10, 34);
+    margin-bottom: 15px;
+}
+
+.projects-list li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 19px;
+}
+
 @media (max-width: 800px) {
     body {
       text-align: center;
@@ -557,7 +609,7 @@ i {
     .services-card {
         box-sizing: border-box;
         margin: 20px;
-        height: 300px;
+        height: 350px;
         width: 300px;
         box-sizing: border-box;
         padding: 40px 20px 40px 20px;
@@ -567,9 +619,52 @@ i {
         text-align: center;
     }
 
+    .services-more-btn {
+        margin-top: 20px;
+    }
+
     .services-text {
         text-align: center;
         width: 175px;
+    }
+
+    .projects-list {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 200;
+        box-sizing: border-box;
+        padding: 30px;
+        border-radius: 8px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 750px;
+        width: 350px;
+    }
+
+    .close-list {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+    }
+
+    .list-title {
+        text-align: center;
+        font-size: 14px;
+        line-height: 15px;
+        color: rgb(4, 10, 34);
+        margin-bottom: 15px;
+    }
+
+    .projects-list li {
+        margin-bottom: 10px;
+        font-size: 12px;
+        line-height: 16px;
     }
 
     .project-title {
