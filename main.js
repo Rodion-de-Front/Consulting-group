@@ -1,60 +1,3 @@
-let array = [
-    "pena.png",
-    "cur.png",
-    "nbl.png",
-    "baltic.png",
-    "admir.png",
-    "rrt.png",
-    "mosc.png",
-    "grow.jpg",
-    "sam.jpg",
-    "tec.jpg",
-    "kuch.png",
-    "pie.jpg",
-    "pec.jpg",
-    "spz.png",
-    "lei.png",
-    "a.jpg",
-    "abm.png",
-    "yag.png",
-    "bfa.png",
-    "ram.png",
-    "rek.png",
-    "csa.jpg",
-    "ibs.png",
-    "ebank.png",
-    "sap.jpg",
-    "park.jpg"
-]
-
-let current_slide = 0;
-
-function nextslide() {
-
-    current_slide += 1
-
-    if (current_slide > array.length - 1) {
-        current_slide = 0
-        document.getElementById('slider-img').innerHTML = `<img src="img/` + array[current_slide] + `">`
-
-    } else {
-        document.getElementById('slider-img').innerHTML = `<img src="img/` + array[current_slide] + `">`
-    }
-}
-
-function prevslide() {
-
-    current_slide -= 1
-
-    if (current_slide < 0) {
-        current_slide = array.length - 1
-        document.getElementById('slider-img').innerHTML = `<img src="img/` + array[current_slide] + `">`
-
-    } else {
-        document.getElementById('slider-img').innerHTML = `<img src="img/` + array[current_slide] + `">`
-    }
-}
-
 //функция чтобы открыть и спрятать меню
 function toggleMenu() {
 
@@ -94,12 +37,14 @@ if (window.innerWidth < 800) {
         </div>`;
 }
 
-function showMoreServ(tmpl_id) {
-    document.querySelector('body').classList.toggle('opacity');
-    document.getElementById("tmpl_serv" + tmpl_id).classList.toggle('projects-list')
-}
+document.getElementById('content').classList.add('visible');
 
-function closeList(tmpl_id) {
-    document.querySelector('body').classList.toggle('opacity');
-    document.getElementById("tmpl_serv" + tmpl_id).classList.toggle('projects-list')
-}
+window.addEventListener('scroll', function () {
+    var element = document.getElementById('content');
+    const scrollPosition = window.scrollY;
+    if (scrollPosition == 0) {
+        element.classList.add('visible');
+    } else if (scrollPosition > window.innerHeight){
+        element.classList.remove('visible');
+    }
+  });
