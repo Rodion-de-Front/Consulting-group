@@ -661,4 +661,8 @@ i {
         word-spacing: 20px;
         padding: 0;
     }
+
+    .socials {
+        margin-bottom: 50px;
+    }
 }
