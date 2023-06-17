@@ -10,8 +10,13 @@ if (window.innerWidth < 968) {
     document.querySelector('#navigation').innerHTML = `
         <img id="lines" src="img/lines.png" onclick="toggleMenu()">
         <div id="sidebar">
-            <div class="mobile-logo">
+            <div class=" item mobile-logo">
                 <img src="img/mobile-logo.png"/>
+            </div>
+            <div class="item">
+            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+            <a class="calen" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/sgorbachev'});return false;">Выберите время для общения с нами</a>
             </div>
             <div class="item">
                 <img src="img/home.png"/>

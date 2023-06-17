@@ -11,7 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-a:-webkit-any-link {
+.calen {
     color: white;
     font-family: 'Ropa Sans', sans-serif;
     font-size: 20px;
@@ -19,7 +19,7 @@ a:-webkit-any-link {
     transition: 0.4s;
 }
 
-a:-webkit-any-link:hover {
+.calen:hover {
     color: rgb(173, 173, 173);
 }
 
@@ -462,8 +462,6 @@ i {
 }
 
 .mobile-logo img {
-    position: relative;
-    top: 80px;
     width: 80%;
     height: 40px;
 }
@@ -1327,7 +1325,7 @@ i {
     }
 
    .services-content {
-    
+        
    }
 
    .option-list {
@@ -1349,8 +1347,12 @@ i {
         margin: 20px;
    }
 
-   .a:-webkit-any-link {
-        font-size: 12px;
+   .calen {
+        position: relative;
+        top: 80;
+        font-size: 14px;
+        color: rgba(0, 54, 100, 1);
+        font-weight: 700;
    }
 
     .footer {
