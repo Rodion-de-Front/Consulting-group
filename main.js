@@ -10,6 +10,9 @@ if (window.innerWidth < 800) {
     document.querySelector('#navigation').innerHTML = `
         <img id="lines" src="img/lines.png" onclick="toggleMenu()">
         <div id="sidebar">
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/sgorbachev'});return false;">Выберите время для общения с нами</a>
             <div class="item">
                 <img src="img/home.png"/>
                 <a class="nav-item" href="#Home" onclick="toggleMenu()">Главная</a>
@@ -37,7 +40,11 @@ if (window.innerWidth < 800) {
         </div>`;
 }
 
-document.getElementById('content').classList.add('visible');
+function show() {
+    document.getElementById('content').classList.add('visible');
+  }
+setTimeout(show, 1000);
+
 
 window.addEventListener('scroll', function () {
     var element = document.getElementById('content');
@@ -48,3 +55,22 @@ window.addEventListener('scroll', function () {
         element.classList.remove('visible');
     }
   });
+
+  function showList(option_id) {
+    let btns = document.querySelectorAll('.option');
+    for (let i = 0; i < btns.length; i++) {
+        btns[i].style.backgroundColor = 'white';
+        btns[i].style.color = 'black';
+
+    }
+    let cases = document.querySelectorAll('.case');
+    for (let i = 0; i < cases.length; i++) {
+        cases[i].classList.remove('visible')
+
+    }
+    let item = document.getElementById('case' + option_id);
+    item.classList.add('visible');
+    let btn = document.getElementById('option' + option_id)
+    btn.style.backgroundColor = 'rgba(0, 54, 100, 1)';
+    btn.style.color = 'white';
+  }
