@@ -13,6 +13,9 @@ if (window.innerWidth < 800) {
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
             <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
             <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/sgorbachev'});return false;">Выберите время для общения с нами</a>
+            <div class="mobile-logo">
+                <img src="img/mobilelogo.png"/>
+            </div>
             <div class="item">
                 <img src="img/home.png"/>
                 <a class="nav-item" href="#Home" onclick="toggleMenu()">Главная</a>
