@@ -6,15 +6,12 @@ function toggleMenu() {
     document.querySelector('body').classList.toggle('opacity');
 }
 
-if (window.innerWidth < 800) {
+if (window.innerWidth < 968) {
     document.querySelector('#navigation').innerHTML = `
         <img id="lines" src="img/lines.png" onclick="toggleMenu()">
         <div id="sidebar">
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/sgorbachev'});return false;">Выберите время для общения с нами</a>
             <div class="mobile-logo">
-                <img src="img/mobilelogo.png"/>
+                <img src="img/mobile-logo.png"/>
             </div>
             <div class="item">
                 <img src="img/home.png"/>
@@ -42,6 +39,8 @@ if (window.innerWidth < 800) {
             </div>
         </div>`;
 }
+
+console.log(window.innerWidth)
 
 function show() {
     document.getElementById('content').classList.add('visible');
