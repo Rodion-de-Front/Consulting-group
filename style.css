@@ -425,11 +425,11 @@ i {
     transition: all 0.3s;
     overflow: auto;
     overflow-x: hidden;
-    z-index: 9999;
+    z-index: 99999;
 }
 
   #lines {
-    z-index: 99999;
+    z-index: 999999;
     position: fixed;
     left: 0;
     top: 0;
